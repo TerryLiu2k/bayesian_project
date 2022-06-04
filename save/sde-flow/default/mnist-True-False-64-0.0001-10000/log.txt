@@ -1,0 +1,32 @@
+2022-05-30 19:50:11.280134	folder path: ./save/sde-flow/default/mnist-True-False-64-0.0001-10000
+2022-05-30 19:50:11.280254	Namespace(T0=1.0, batch_size=64, checkpoint_every=1000, dataroot='~/bayesian_project/data/MNIST/', dataset='mnist', debias=False, expname='default', lr=0.0001, num_iterations=10000, num_steps=1000, print_every=500, real=True, sample_every=500, saveroot='./save', test_batch_size=256, vtype='rademacher')
+2022-05-30 19:50:36.801502	folder path: ./save/sde-flow/default/mnist-True-False-64-0.0001-10000
+2022-05-30 19:50:36.801618	Namespace(T0=1.0, batch_size=64, checkpoint_every=1000, dataroot='~/bayesian_project/data/MNIST/', dataset='mnist', debias=False, expname='default', lr=0.0001, num_iterations=10000, num_steps=1000, print_every=500, real=True, sample_every=500, saveroot='./save', test_batch_size=256, vtype='rademacher')
+2022-05-30 19:50:51.448395	folder path: ./save/sde-flow/default/mnist-True-False-64-0.0001-10000
+2022-05-30 19:50:51.448517	Namespace(T0=1.0, batch_size=64, checkpoint_every=1000, dataroot='~/bayesian_project/data/', dataset='mnist', debias=False, expname='default', lr=0.0001, num_iterations=10000, num_steps=1000, print_every=500, real=True, sample_every=500, saveroot='./save', test_batch_size=256, vtype='rademacher')
+2022-05-30 19:51:09.826573	Iteration 1 	BPD 13.260859489440918
+2022-05-30 19:51:48.231095	Iteration 500 	BPD 4.0586018562316895
+2022-05-30 19:53:20.799082	folder path: ./save/sde-flow/default/mnist-True-False-64-0.0001-10000
+2022-05-30 19:53:20.799200	Namespace(T0=1.0, batch_size=64, checkpoint_every=1000, dataroot='~/bayesian_project/data/', dataset='mnist', debias=False, expname='default', lr=0.0001, num_iterations=10000, num_steps=1000, print_every=500, real=True, sample_every=500, saveroot='./save', test_batch_size=256, vtype='rademacher')
+2022-05-30 19:53:39.485009	Iteration 1 	BPD 13.271596908569336
+2022-05-30 19:54:18.241863	Iteration 500 	BPD 4.060578346252441
+2022-05-30 19:55:05.524831	Iteration 1000 	BPD 2.7557032108306885
+2022-05-30 19:55:52.711026	Iteration 1500 	BPD 2.5340206623077393
+2022-05-30 19:56:39.496543	Iteration 2000 	BPD 2.295680046081543
+2022-05-30 19:57:26.584609	Iteration 2500 	BPD 2.1887032985687256
+2022-05-30 19:58:13.549081	Iteration 3000 	BPD 1.9790916442871094
+2022-05-30 19:59:00.390666	Iteration 3500 	BPD 2.0598771572113037
+2022-05-30 19:59:47.703138	Iteration 4000 	BPD 1.9163496494293213
+2022-05-30 20:00:34.905163	Iteration 4500 	BPD 1.8195695877075195
+2022-05-30 20:01:22.254599	Iteration 5000 	BPD 1.882810115814209
+2022-05-30 20:02:09.579014	Iteration 5500 	BPD 1.7662479877471924
+2022-05-30 20:02:56.439236	Iteration 6000 	BPD 1.7693198919296265
+2022-05-30 20:03:43.623465	Iteration 6500 	BPD 1.7883784770965576
+2022-05-30 20:04:30.856431	Iteration 7000 	BPD 1.6989365816116333
+2022-05-30 20:05:18.048852	Iteration 7500 	BPD 1.6156458854675293
+2022-05-30 20:06:04.916789	Iteration 8000 	BPD 1.4098559617996216
+2022-05-30 20:06:51.851928	Iteration 8500 	BPD 1.2001490592956543
+2022-05-30 20:07:39.137308	Iteration 9000 	BPD 1.6648132801055908
+2022-05-30 20:08:26.556106	Iteration 9500 	BPD 1.4318277835845947
+2022-05-30 20:09:13.912871	Iteration 10000 	BPD 1.4897642135620117
+2022-05-30 20:09:13.913737	Finished training

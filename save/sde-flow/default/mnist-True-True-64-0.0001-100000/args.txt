@@ -1,0 +1,18 @@
+{
+    "dataset": "mnist",
+    "dataroot": "~/bayesian_project/data/",
+    "saveroot": "./save",
+    "expname": "default",
+    "print_every": 500,
+    "sample_every": 500,
+    "checkpoint_every": 1000,
+    "num_steps": 1000,
+    "T0": 1.0,
+    "vtype": "rademacher",
+    "batch_size": 64,
+    "test_batch_size": 256,
+    "lr": 0.0001,
+    "num_iterations": 100000,
+    "real": true,
+    "debias": true
+}
