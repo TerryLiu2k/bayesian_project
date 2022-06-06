@@ -45,8 +45,8 @@ def get_grid_corrector(sde, input_channels, input_height, n=4, num_steps=20, tra
             sigma = sde.sigma(ones * ts[i], y0)
             y0 = y0 + delta * mu + delta ** 0.5 * sigma * torch.randn_like(y0)
 
-            score = sde.a(y0, sde.T - (ones * ts[i]).squeeze())
-            g = sde.base_sde.g(ones * ts[i], y0)
+            score = sde.a(y0, ones * ts[i])
+            g = sde.base_sde.g(sde.T - ones * ts[i], y0)
             y0 = y0 + epsilon * score / g + (2 * epsilon) ** 0.5 * torch.randn_like(y0) # Corrector
 
     if transform is not None:
