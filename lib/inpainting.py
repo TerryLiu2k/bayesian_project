@@ -37,13 +37,13 @@ def inpaint(sde, data, mask, input_channels, input_height, num_steps=20, transfo
         for i in range(num_steps):
             mu = sde.mu(ones * ts[i], y0)
             sigma = sde.sigma(ones * ts[i], y0)
-            y0 = y0 + (delta * mu + delta ** 0.5 * sigma * torch.randn_like(y0))
-            data_perturbed = sde.base_sde.sample(sde.T - ones * ts[i], data_transformed)
-            y0 = y0 * (1. - mask) + data_perturbed * mask
-
-            score = sde.a(y0, (ones * ts[i]).squeeze())
-            g = sde.base_sde.g(sde.T - ones * ts[i], y0)
-            y0 = y0 + (epsilon * score / g + (2 * epsilon) ** 0.5 * torch.randn_like(y0)) # Corrector
+            S = float(np.random.random() < 0.5)
+            K1 = delta * mu + delta ** 0.5 * (torch.randn_like(y0) + S) * sigma
+            y1 = y0 + K1
+            mu1 = sde.mu(ones * ts[i+1], y1)
+            sigma1 = sde.sigma(ones * ts[i+1], y1)
+            K2 = delta * mu1 + delta ** 0.5 * (torch.randn_like(y0) - S) * sigma1
+            y0 = y0 + (K1 + K2) / 2
             data_perturbed = sde.base_sde.sample(sde.T - ones * ts[i], data_transformed)
             y0 = y0 * (1. - mask) + data_perturbed * mask
             if log_epoch is not None and (i+1) % log_epoch == 0:
