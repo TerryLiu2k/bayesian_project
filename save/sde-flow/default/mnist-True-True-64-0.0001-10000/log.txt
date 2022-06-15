@@ -1,0 +1,4 @@
+2022-06-14 23:42:09.651919	folder path: ./save/sde-flow/default/mnist-True-True-64-0.0001-10000
+2022-06-14 23:42:09.652035	Namespace(dataset='mnist', dataroot='./data', saveroot='./save', expname='default', print_every=500, sample_every=500, checkpoint_every=1000, num_steps=1000, T0=1.0, vtype='rademacher', batch_size=64, test_batch_size=256, lr=0.0001, num_iterations=10000, real=True, debias=True)
+2022-06-14 23:42:32.217198	Iteration 1 	BPD 13.345779418945312
+2022-06-14 23:43:10.058219	Iteration 500 	BPD 3.7941436767578125
